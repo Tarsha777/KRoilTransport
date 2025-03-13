@@ -9,8 +9,8 @@ The system supports **user authentication, real-time updates, and admin dashboar
 
 ✅ **User Authentication** - Signup/Login for customers and admins  
 ✅ **Oil Tanker Booking** - Book tankers, check availability, and confirm orders  
-✅ **Admin Dashboard** - Manage users, bookings, and tankers  
-✅ **Real-time Updates** - WebSocket integration for live booking status  
+✅ **Admin Dashboard** - (Upcoming)
+✅ **Real-time Updates** -(Upcoming)  
 ✅ **Payment Integration** (Upcoming)  
 ✅ **Email/SMS Notifications** (Upcoming)  
 
@@ -18,12 +18,10 @@ The system supports **user authentication, real-time updates, and admin dashboar
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React.js + Tailwind CSS  
-- **Backend:** Node.js + Express.js  
-- **Database:** MongoDB + Mongoose  
-- **Authentication:** JWT + bcrypt  
-- **Real-time Features:** Socket.io  
-- **Deployment:** Vercel (Frontend) & Render (Backend)  
+- HTML
+- CSS
+- Java Script
+- MySQl
 
 ---
 
