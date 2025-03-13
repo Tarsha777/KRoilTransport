@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="Assets/logo2.jpg">
+<link rel="stylesheet" href="Css/krstyle.css">
+<title>KR Oil Transport</title>
+</head>
+<body>
+<header>
+<div class="container">
+    
+  <div class="navbar">
+    
+    
+    <div class="dropdown">
+      <button class="dropbtn">HIRE</button>
+      <div class="dropdown-content">
+        <a href="book.html">VIJAYAWADA</a>
+        <a href="book.html">VIZAG</a>
+        <a href="book.html">KRISHNAPTNAM</a>
+        <a href="book.html">KADAPA</a>
+        <a href="book.html">KURNOOL</a>
+        <a href="book.html">CHITOOR</a>
+        <a href="book.html">ANANTAPUR</a>
+        <a href="book.html">ELURU</a>
+        <a href="book.html">ONGOLE</a>
+        <a href="book.html">GUNTUR</a>
+        <a href="book.html">KAKINADA</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">TANK TYPE</button>
+      <div class="dropdown-content">
+        <a href="book.html">Stainless Steel</a>
+        <a href="book.html">Iron</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">CAPACITY</button>
+        <div class="dropdown-content">
+          <a href="book.html">25 tn</a>
+          <a href="book.html">30 tn</a>
+        </div>
+      </div>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="dropdown">
+        <button class="dropbtn">LOGIN</button>
+        <div class="dropdown-content">
+          <a href="login.html">Customer </a>
+          <a href="alogin.html">Admin</a>
+          <a href="signup.html">New </a>
+        </div>
+      </div>
+  </div>
+</div>
+</header>
+
+
+<main>
+  
+<br>
+<br>
+  <div class="desc">
+    <h2>Welcome</h2>
+    <p>Welcome to KR Oil Transport, your trusted partner in efficient and reliable oil tanker transportation services. With a commitment to excellence and safety, we are dedicated to meeting your bulk liquid transport needs with precision and professionalism.</p>
+  <p>At KR Oil Transport, we understand the importance of timely and secure delivery of your valuable cargo. Whether it's crude oil, petroleum products, or any other liquid cargo, our fleet of state-of-the-art tankers and experienced team ensure that your goods reach their destination safely and on schedule.
+  </p>
+  <h2>Why Choose KR Oil Transport?</h2>
+  <h3>Reliability:</h3>
+  <p> With years of experience in the industry, we have built a reputation for reliability and dependability. You can trust us to deliver your cargo with the utmost care and efficiency.
+  </p>
+  <h3>Safety:</h3>
+  <p>Safety is our top priority. Our tankers are meticulously maintained and operated by trained professionals, adhering to the highest safety standards to ensure the secure transportation of your goods.
+  </p>
+  <h3>Flexibility:</h3>
+  <p>
+    We offer flexible solutions tailored to your specific transportation needs. Whether you require local deliveries or long-haul transportation, we have the capabilities to meet your requirements.
+  </p>
+  <h3>Customer Satisfaction:</h3>
+  <p>Your satisfaction is our ultimate goal. We strive to exceed your expectations by providing exceptional service, transparent communication, and personalized attention to your needs.</p>
+  <h3>Environmental Responsibility:</h3>
+  <p>We are committed to sustainability and environmental responsibility. Our fleet is equipped with advanced technologies to minimize emissions and reduce our carbon footprint.</p>
+  <p>Partner with KR Oil Transport for seamless, cost-effective, and environmentally conscious oil tanker transportation solutions. Experience the difference with our dedicated team and reliable services. Contact us today to discuss your transportation needs and let us be your preferred partner in oil logistics.</p>
+
+  </div>
+  <div class="formc">
+    <div class="form-container">
+      <h2>Check Price</h2>
+      <form id="priceForm">
+        <div class="form-group">
+          <label for="loadingLocation">Loading Location:</label>
+          <input type="text" id="loadingLocation" name="loadingLocation" required>
+        </div>
+        <div class="form-group">
+          <label for="unloadingLocation">Unloading Location:</label>
+          <input type="text" id="unloadingLocation" name="unloadingLocation" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Check Price</button>
+        </div>
+      </form>
+      <div id="priceResult"></div>
+    </div>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&loading=async" async defer></script>
+  <script>
+  document.getElementById('priceForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var loadingLocation = document.getElementById('loadingLocation').value;
+    var unloadingLocation = document.getElementById('unloadingLocation').value;
+
+    var directionsService = new google.maps.DirectionsService();
+    var directionsRequest = {
+        origin: loadingLocation,
+        destination: unloadingLocation,
+        travelMode: google.maps.TravelMode.DRIVING
+    };
+
+    directionsService.route(directionsRequest, function(response, status) {
+        if (status === google.maps.DirectionsStatus.OK) {
+            var distance = response.routes[0].legs[0].distance.value; // Distance in meters
+            var distanceKm = distance / 1000; // Convert to kilometers
+            calculatePrice(distanceKm, loadingLocation, unloadingLocation);
+        } else {
+            document.getElementById('priceResult').innerHTML = "Error: Could not calculate distance.";
+        }
+    });
+});
+
+function calculatePrice(distanceKm, loadingLocation, unloadingLocation) {
+    // Example pricing logic: $1 per kilometer
+    var price = distanceKm * 1;
+
+    document.getElementById('priceResult').innerHTML =
+        "Loading Location: " + loadingLocation + "<br>" +
+        "Unloading Location: " + unloadingLocation + "<br>" +
+        "Distance: " + distanceKm.toFixed(2) + " km<br>" +
+        "Price: $" + price.toFixed(2);
+}
+  </script>
+  <button id="fixedButton" href="tele:9100019991">Call NOW</button>
+  </main>
+
+  <footer>
+    <section id="about">
+        <h1>About Us:</h1>
+         <div class="adesc">   
+           <p>At KR Oil Transport, we pride ourselves on being a leading provider of safe, efficient, and reliable oil transportation solutions. With decades of industry experience, we have established ourselves as a trusted partner for businesses seeking top-tier logistics services in the oil sector.
+           </p>
+           </div>
+    </section>
+    <section id="contact">
+      <h1>TELE: <b href="tel:9100019991">9100019991</b></h1>
+    </section>
+</footer>
+</body>
+</html>
