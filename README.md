@@ -8,11 +8,17 @@ The system supports **user authentication, real-time updates, and admin dashboar
 ## 🔥 Features
 
 ✅ **User Authentication** - Signup/Login for customers and admins  
+
 ✅ **Oil Tanker Booking** - Book tankers, check availability, and confirm orders  
+
 ✅ **Admin Dashboard** - (Upcoming)
+
 ✅ **Real-time Updates** -(Upcoming)  
+
 ✅ **Payment Integration** (Upcoming)  
+
 ✅ **Email/SMS Notifications** (Upcoming)  
+
 
 ---
 
