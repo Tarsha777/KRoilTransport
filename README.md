@@ -1,11 +1,11 @@
-# 🚛 KRoilTransport - Oil Tanker Booking Service
+#🚛 KRoilTransport - Oil Tanker Booking Service
 
 KRoilTransport is a web-based **oil tanker booking platform** that allows users to **book oil tankers in real-time** while enabling admins to manage orders efficiently.
 The system supports **user authentication, real-time updates, and admin dashboards** for managing bookings.
 
 ---
 
-## 🔥 Features
+🔥 Features
 
 ✅ **User Authentication** - Signup/Login for customers and admins  
 
@@ -22,7 +22,7 @@ The system supports **user authentication, real-time updates, and admin dashboar
 
 ---
 
-## 🛠 Tech Stack
+🛠 Tech Stack
 
 - HTML
 - CSS
@@ -31,9 +31,9 @@ The system supports **user authentication, real-time updates, and admin dashboar
 
 ---
 
-## 🚀 Installation & Setup
+ 🚀 Installation & Setup
 
-### 1️⃣ Clone the Repository  
+1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/Tarsha777/KRoilTransport.git
 cd KRoilTransport
