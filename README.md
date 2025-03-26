@@ -9,7 +9,7 @@ The system supports **user authentication, real-time updates, and admin dashboar
 
 ✅ **User Authentication** - Signup/Login for customers and admins  
 
-✅ **Oil Tanker Booking** - Book tankers, check availability, and confirm orders  
+✅ **Oil Tanker Booking** - Book tankers, check availability, and confirm orders , print tickets  
 
 ✅ **Admin Dashboard** - (Upcoming)
 
